@@ -12,7 +12,8 @@ class TestBankAccount(unittest.TestCase):
     def test_deposit_amount_should_be_150(self):
         self.bankaccount = BankAccount("ABC", 50)
         self.bankaccount.deposit(100)
-        self.assertEqual(self.bankaccount.get_balance(), 150)
+        self.assertEqual(self.bankaccount.get_balance(), 75)
+
 
 if __name__ == '__main__':
     unittest.main()
