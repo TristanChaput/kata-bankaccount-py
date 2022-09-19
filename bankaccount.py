@@ -7,5 +7,8 @@ class BankAccount:
     def withdraw(self, amount):
         self._balance -= amount
 
+    def deposit(self, amount):
+        self._balance += amount
+
     def get_balance(self):
         return self._balance
