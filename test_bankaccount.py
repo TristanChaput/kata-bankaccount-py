@@ -9,5 +9,10 @@ class TestBankAccount(unittest.TestCase):
         self.bankaccount.withdraw(25)
         self.assertEqual(self.bankaccount.get_balance(), 75)
 
+    def test_deposit_amount_should_be_150(self):
+        self.bankaccount = BankAccount("ABC", 50)
+        self.bankaccount.deposit(100)
+        self.assertEqual(self.bankaccount.get_balance(), 150)
+
 if __name__ == '__main__':
     unittest.main()
